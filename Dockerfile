@@ -4,6 +4,9 @@ RUN apt-get update
 RUN apt-get install wget
 RUN apt-get install sudo
 
+# Install Maven
+run sudo apt-get install maven -y
+
 # Install nodejs
 RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
 RUN sudo apt-get install nodejs
