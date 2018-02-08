@@ -14,4 +14,5 @@
   - terraform
   - awscli
   - awsebcli
-
+  - Ruby
+  - Bundler
