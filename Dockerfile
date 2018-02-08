@@ -34,3 +34,7 @@ RUN sudo apt-get -y install python python-pip
 RUN sudo pip install awscli
 RUN pip install awsebcli
 RUN aws --version
+
+# Install Ruby and Bundler
+RUN apt-get install -y ruby ruby-dev
+RUN gem install bundler
