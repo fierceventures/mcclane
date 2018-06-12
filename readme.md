@@ -16,3 +16,5 @@
   - awsebcli
   - Ruby
   - Bundler
+  - chrome-headless
+  - chromedriver
