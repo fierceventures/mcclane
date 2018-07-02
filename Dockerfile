@@ -58,6 +58,9 @@ RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debia
 RUN apt-get update
 RUN apt-get install -y docker-ce
 
+# Install Firebase tools
+RUN npm install -g firebase-tools
+
 # It's a good idea to use dumb-init to help prevent zombie chrome processes.
 ADD https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 /usr/local/bin/dumb-init
 RUN chmod +x /usr/local/bin/dumb-init

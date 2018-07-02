@@ -18,3 +18,6 @@
   - Bundler
   - chrome-headless
   - chromedriver
+  - firebase-tools
+  - docker
+  - maven
