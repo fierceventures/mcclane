@@ -21,3 +21,5 @@
   - firebase-tools
   - docker
   - maven
+  - Karma
+  - shadow-cljs

@@ -61,6 +61,13 @@ RUN apt-get install -y docker-ce
 # Install Firebase tools
 RUN npm install -g firebase-tools
 
+# Install Karma
+RUN npm install -g karma-cli@1.0.1
+
+# Install shadow-cljs
+RUN npm install -g shadow-cljs@2.4.1
+
+
 # It's a good idea to use dumb-init to help prevent zombie chrome processes.
 ADD https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 /usr/local/bin/dumb-init
 RUN chmod +x /usr/local/bin/dumb-init
