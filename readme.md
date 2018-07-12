@@ -23,3 +23,4 @@
   - maven
   - Karma
   - shadow-cljs
+  - Google Cloud SDK
