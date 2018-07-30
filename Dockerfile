@@ -10,7 +10,7 @@ RUN apt-get install -y vim
 RUN sudo apt-get install maven -y
 
 # Install nodejs
-RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
+RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 RUN sudo apt-get install nodejs
 RUN node -v
 RUN npm -v
