@@ -4,9 +4,10 @@ RUN apt-get update
 RUN apt-get update --fix-missing
 RUN apt-get install wget
 RUN apt-get install sudo
+RUN apt-get install -y vim
 
 # Install Maven
-run sudo apt-get install maven -y
+RUN sudo apt-get install maven -y
 
 # Install nodejs
 RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
