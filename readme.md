@@ -25,3 +25,4 @@
   - shadow-cljs
   - Google Cloud SDK
   - vim
+  - PostgreSQL
