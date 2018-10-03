@@ -25,3 +25,5 @@
   - shadow-cljs
   - Google Cloud SDK
   - vim
+  - Netcat
+  - PostgreSQL client (psql)

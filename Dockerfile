@@ -81,6 +81,12 @@ RUN export CLOUD_SDK_REPO="cloud-sdk-stretch" && \
     gcloud --version && \
     gsutil --version
 
+# Install Netcat (nc)
+RUN apt-get install -y netcat
+
+# Install PostgreSQL client (psql)
+RUN apt-get install -y postgresql-client
+
 # It's a good idea to use dumb-init to help prevent zombie chrome processes.
 ADD https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 /usr/local/bin/dumb-init
 RUN chmod +x /usr/local/bin/dumb-init
