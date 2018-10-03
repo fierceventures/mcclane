@@ -26,4 +26,4 @@
   - Google Cloud SDK
   - vim
   - Netcat
-  - PostgreSQL client (psql)
+  - Postgres client (psql)
