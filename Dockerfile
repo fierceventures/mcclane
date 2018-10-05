@@ -26,8 +26,8 @@ RUN sudo ln -sf /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr
 RUN phantomjs --version
 
 # Install Terraform
-RUN wget https://releases.hashicorp.com/terraform/0.11.7/terraform_0.11.7_linux_amd64.zip
-RUN unzip terraform_0.11.7_linux_amd64.zip
+RUN wget https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_linux_amd64.zip
+RUN unzip terraform_0.11.8_linux_amd64.zip
 RUN sudo mv terraform /usr/local/bin/
 RUN terraform --version
 
