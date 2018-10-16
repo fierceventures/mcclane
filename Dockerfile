@@ -87,6 +87,17 @@ RUN apt-get install -y netcat
 # Install PostgreSQL client (psql)
 RUN apt-get install -y postgresql-client
 
+# Install Flyway
+ENV FLYWAY_VERSION 5.2.0
+
+RUN mkdir /fw \
+  && cd /fw \
+  && curl -L https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY_VERSION}/flyway-commandline-${FLYWAY_VERSION}.tar.gz -o flyway-commandline-${FLYWAY_VERSION}.tar.gz \
+  && tar -xzf flyway-commandline-${FLYWAY_VERSION}.tar.gz --strip-components=1 \
+  && rm flyway-commandline-${FLYWAY_VERSION}.tar.gz
+
+ENV PATH ${PATH}:/fw/
+
 # It's a good idea to use dumb-init to help prevent zombie chrome processes.
 ADD https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 /usr/local/bin/dumb-init
 RUN chmod +x /usr/local/bin/dumb-init
