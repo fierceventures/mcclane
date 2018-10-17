@@ -27,3 +27,5 @@
   - vim
   - Netcat
   - Postgres client (psql)
+  - Flyway migrations
+  - jq JSON processor
